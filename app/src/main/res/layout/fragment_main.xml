@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.google.android.exoplayer2.ui.PlayerControlView
+        android:id="@+id/controllerView1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="16dp"
+        app:show_timeout="0"
+        app:controller_layout_id="@layout/exo_player_controller_view" />
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+
+    <com.google.android.exoplayer2.ui.PlayerControlView
+        android:id="@+id/controllerView2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="16dp"
+        app:hide_on_touch="false"
+        app:show_timeout="0"
+        app:controller_layout_id="@layout/exo_player_controller_view" />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
